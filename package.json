@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test/index.test.js",
+    "test:cov": "jest test/index.test.js --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
     "node",
     "express"
   ],
-  "author": "lucas-leoni",
+  "author": "Lucas Leoni",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lucas-leoni/AvaliacaoNodeJs/issues"
@@ -25,6 +26,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "jest": "^29.6.4",
     "nodemon": "^3.0.1"
   }
 }
